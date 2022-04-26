@@ -1,2 +1,2 @@
 # pqace
-Trying to create a lib under pqxx for my collage mini-project.
+Trying to create a libary under pqxx for my college mini-project.
