@@ -21,4 +21,4 @@ Trying to create a cpp libary based on pqxx for my college mini-project.
 > ./a.out
 
 ## Congratulations!
-This is **_all_** that I can show you here. More info about functions include **doc.md** in other dir. 
+This is **_all_** that I can show you here. More info about functions include **doc.md** in "other" dir. 
