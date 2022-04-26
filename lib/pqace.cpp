@@ -1,6 +1,7 @@
 #include <iostream>
 #include <pqxx/pqxx>
 #include <string>
+#include "pqace.h"
 
 using namespace std;
 using namespace pqxx;
