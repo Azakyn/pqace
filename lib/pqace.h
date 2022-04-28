@@ -1,12 +1,11 @@
 /* pqace.h */
 #include <string>
+using std::string;
+
+
 class pqace
 {
 public:
-    std::string dbname;
-    std::string user; 
-    std::string password;
-    std::string host;
-    std::string port;
-    int check(std::string dbname, std::string user, std::string password, std::string host, std::string port);
+    int initconnect(string dbname, string user, string password, string host, string port);
+    int drop(string type, string name);
 };

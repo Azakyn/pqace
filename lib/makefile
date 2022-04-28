@@ -1,7 +1,7 @@
 # Makefile for pqace lib
 
 test: main.o libpqace.a
-	g++ -o test main.o -lpqace -lpqxx -lpq
+	g++ -o test main.o -L. -lpqace -lpqxx -lpq
 
 main.o: main.cpp
 	g++ -c main.cpp
