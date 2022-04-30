@@ -37,12 +37,18 @@ return 1;
 };
 
 int pqace::drop(string type, string name) {
-    connection C("dbname = " + dbname_pub + " user = " + user_pub + " password =" + password_pub + " \
+    try {
+        connection C("dbname = " + dbname_pub + " user = " + user_pub + " password =" + password_pub + " \
         hostaddr =" + host_pub + " port = " + port_pub);
-    work W(C);
-    string sql = "drop " + type + " " +name;
-    W.exec( sql );
-    W.commit();
-    cout << type << " " << name << " deleted successfully" << endl;
-    return 1;
+        work W(C);
+        string sql = "drop " + type + " " +name;
+        W.exec( sql );
+        W.commit();
+        cout << type << " " << name << " deleted successfully" << endl;
+        return 1;
+    } catch (const std::exception &e) {
+        cerr << e.what() << std::endl;
+        return 1;
+return 1;
 }
+};
